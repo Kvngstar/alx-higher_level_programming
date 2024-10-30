@@ -11,8 +11,8 @@ if __name__ == "__main__":
     elif operators.get(argv[2]) is not None:
         a = int(argv[1])
         b = int(argv[3])
-        func = operators[argv[2]](a, b)  # brilliant lol
-        print("{} {} {} = {}".format(argv[1], argv[2], argv[3], func))
+        func = operators[argv[2]](a, b)
+        print(f"{argv[1]} {argv[2]} {argv[3]} = {func}")
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
